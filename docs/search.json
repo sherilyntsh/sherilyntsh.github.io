@@ -4,6 +4,13 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "Welcome to my website!\n\n1 + 1 \n\n[1] 2\n\n\n\nIntroduction\nWelcome to Sherilyn’s GitHub! Here is where all the progress of my work from NM2207 will be kept and also my final project. The data story that I have decided to work on is about dogs. I am going to investigate what contributes to the popularity of dog breeds based on their different traits.\n\n\nData Set"
+    "text": "Welcome to my website!\n\n1 + 1 \n\n[1] 2\n\n\n\nIntroduction\nWelcome to Sherilyn’s GitHub! Here is where all the progress of my work from NM2207 will be kept and also my final project. The data story that I have decided to work on is about dogs. I am going to investigate what contributes to the popularity of dog breeds based on their different traits.\n\n\nData Set\nThe links to the data set can be found below:\ndog intelligence - https://data.world/len/dog-size-intelligence-linked\nbreed rank - https://www.kaggle.com/datasets/sujaykapadnis/dog-breeds\ndog breeds - https://www.kaggle.com/datasets/warcoder/dog-breeds-details\nakc data latest - https://www.kaggle.com/datasets/mexwell/dog-breeds-dataset"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "sherilyntsh.github.io",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
   }
 ]
