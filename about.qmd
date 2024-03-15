@@ -12,4 +12,7 @@ Welcome to my website!
 
 Welcome to Sherilyn's GitHub! Here is where all the progress of my work from NM2207 will be kept and also my final project. The data story that I have decided to work on is about dogs. I am going to investigate what contributes to the popularity of dog breeds based on their different traits.
 
-# Data Visualization
+# Data Set
+
+```{r data set}
+```
