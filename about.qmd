@@ -16,10 +16,4 @@ Welcome to Sherilyn's GitHub! Here is where all the progress of my work from NM2
 
 The links to the data set can be found below:
 
-dog intelligence - <https://data.world/len/dog-size-intelligence-linked>
-
-breed rank - <https://www.kaggle.com/datasets/sujaykapadnis/dog-breeds>
-
-dog breeds - <https://www.kaggle.com/datasets/warcoder/dog-breeds-details>
-
 akc data latest - <https://www.kaggle.com/datasets/mexwell/dog-breeds-dataset>

@@ -1,0 +1,48 @@
+---
+title: "Diary-Entry-9"
+author: "Sherilyn"
+date: "`r Sys.Date()`"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+### What is the question that you are going to answer?
+
+How do I determine which dog breed is best suited for me?
+
+### Why is this an important question?
+
+According to the American Kennel Club, getting a dog should be a well-planned decision to ensure a lifelong commitment as dogs are not objects that can be returned if you change your mind because they have become too big, too energetic, or too time-consuming to care for properly. For the greatest chance for success, one must find a breed that will best fit their lifestyle, activity level, and living conditions.
+
+### Which rows and columns of the dataset will be used to answer this question? 
+
+I will be using the data set "akc-data-latest". The columns I will be using is 'breeds', 'popularity', 'min_height', 'max_height', 'min_weight', 'max_weight', 'min_expectancy', 'max_expectancy', 'group', 'grooming_frequency_value', 'shedding_value', 'shedding_category', "energy_level_value', 'energy_level_category', 'trainability_value', 'trainability_category', 'demeanor_value', 'demeanor_category'.
+
+### Potential Challenges & Errors
+
+Some challenges I feel might surface when creating the Shiny App is that there might be too many variables in the data to create a meaningful visualization to answer the statement. Moreover, the data set I will be using has some empty columns thus cleaning up the data might be difficult as I might eliminate breeds that do not have sufficient data, limiting the breed choices for users.

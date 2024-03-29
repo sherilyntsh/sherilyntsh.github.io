@@ -12,5 +12,26 @@
     "title": "sherilyntsh.github.io",
     "section": "",
     "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "Diary-Entry-9.html",
+    "href": "Diary-Entry-9.html",
+    "title": "Diary-Entry-9",
+    "section": "",
+    "text": "This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.\nWhen you click the Knit button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:\n\nsummary(cars)\n\n     speed           dist       \n Min.   : 4.0   Min.   :  2.00  \n 1st Qu.:12.0   1st Qu.: 26.00  \n Median :15.0   Median : 36.00  \n Mean   :15.4   Mean   : 42.98  \n 3rd Qu.:19.0   3rd Qu.: 56.00  \n Max.   :25.0   Max.   :120.00"
+  },
+  {
+    "objectID": "Diary-Entry-9.html#r-markdown",
+    "href": "Diary-Entry-9.html#r-markdown",
+    "title": "Diary-Entry-9",
+    "section": "",
+    "text": "This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.\nWhen you click the Knit button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:\n\nsummary(cars)\n\n     speed           dist       \n Min.   : 4.0   Min.   :  2.00  \n 1st Qu.:12.0   1st Qu.: 26.00  \n Median :15.0   Median : 36.00  \n Mean   :15.4   Mean   : 42.98  \n 3rd Qu.:19.0   3rd Qu.: 56.00  \n Max.   :25.0   Max.   :120.00"
+  },
+  {
+    "objectID": "Diary-Entry-9.html#including-plots",
+    "href": "Diary-Entry-9.html#including-plots",
+    "title": "Diary-Entry-9",
+    "section": "Including Plots",
+    "text": "Including Plots\nYou can also embed plots, for example:\n\n\n\n\n\nNote that the echo = FALSE parameter was added to the code chunk to prevent printing of the R code that generated the plot.\n\nWhat is the question that you are going to answer?\nHow do I determine which dog breed is best suited for me?\n\n\nWhy is this an important question?\nAccording to the American Kennel Club, getting a dog should be a well-planned decision to ensure a lifelong commitment as dogs are not objects that can be returned if you change your mind because they have become too big, too energetic, or too time-consuming to care for properly. For the greatest chance for success, one must find a breed that will best fit their lifestyle, activity level, and living conditions.\n\n\nWhich rows and columns of the dataset will be used to answer this question? \nI will be using the data set “akc-data-latest”. The columns I will be using is ‘breeds’, ‘popularity’, ‘min_height’, ‘max_height’, ‘min_weight’, ‘max_weight’, ‘min_expectancy’, ‘max_expectancy’, ‘group’, ‘grooming_frequency_value’, ‘shedding_value’, ‘shedding_category’, “energy_level_value’, ‘energy_level_category’, ‘trainability_value’, ‘trainability_category’, ‘demeanor_value’, ‘demeanor_category’.\n\n\nPotential Challenges & Errors\nSome challenges I feel might surface when creating the Shiny App is that there might be too many variables in the data to create a meaningful visualization to answer the statement. Moreover, the data set I will be using has some empty columns thus cleaning up the data might be difficult as I might eliminate breeds that do not have sufficient data, limiting the breed choices for users."
   }
 ]
