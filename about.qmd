@@ -6,10 +6,14 @@ Welcome to my website!
 
 # Introduction
 
-Welcome to Sherilyn's GitHub! Here is where all the progress of my work from NM2207 will be kept and also my final project. The data story that I have decided to work on is about dogs. I am going to create an app using shiny to help users to figure out which dogs is best suited for them using the different characteristics and categories provided in the data set.
+Welcome to Sherilyn's GitHub! Here is where all the progress of my work from NM2207 will be kept and also my final project. The data story that I have decided to work on is about dogs. I am going to create an app using shiny to help users to visualize which dog breed group is the most popular and why is that so.
 
 # Data Set
 
 The links to the data set can be found below:
 
 akc data latest - <https://www.kaggle.com/datasets/mexwell/dog-breeds-dataset>
+
+# Data Selection
+
+I will be using the columns breeds, group, min_height, max_height, min_weight, max_weight, min_expectancy, max_expectancy, grooming_frequency_value, shedding_value, energy_level_value and trainability_value. There will be 2 kinds of visualization. One will be a table whereby users can see the whole data set and also filter through the data set. The other visualization will be an interactive plot to see the relationship between the most popular dog groups and their characteristics.
