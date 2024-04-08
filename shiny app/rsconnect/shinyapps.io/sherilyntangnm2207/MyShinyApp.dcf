@@ -5,7 +5,7 @@ account: sherilyntangnm2207
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 11617470
-bundleId: 8464443
+bundleId: 8468054
 url: https://sherilyntangnm2207.shinyapps.io/MyShinyApp/
 version: 1
 asMultiple: FALSE

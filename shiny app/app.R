@@ -36,7 +36,7 @@ ui <- fluidPage(
   
   sidebarLayout(
     sidebarPanel(
-      style = "width: 200px;",
+      style = "width: 300px;",
       textOutput("text"),
       
       selectInput(inputId = "breeds",
