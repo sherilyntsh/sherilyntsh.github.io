@@ -1,4 +1,8 @@
 library(tidyverse)
+library(shiny)
+library(shinythemes)
+library(gridExtra)
+
 dogs <- read.csv("akc dogs.csv")
 
 dogs_filtered <- dogs %>%
@@ -26,6 +30,8 @@ data_wg <- data %>%
 
 # Define UI ----
 ui <- fluidPage(
+  theme = shinythemes::shinytheme("journal"),
+  
   titlePanel("Which is the most popular dog breed group??"),
   
   sidebarLayout(
