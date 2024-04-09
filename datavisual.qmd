@@ -1,0 +1,15 @@
+---
+title: "Data Visualization"
+---
+
+## Bar Chart
+
+In this bar chart visualization, we can see the count of the group breeds in the top 100 dog breeds. From here, we can see that the breed group 'Working Group' has the highest count in the top 100, this can imply that this is the most popular breed group. This visualization also has an interactive feature! Use the side bar to select different variables to see which value is the most common within the top 100 breeds.
+
+```{=html}
+<iframe height="400" width="100%" frameborder="no" src="https://sherilyntangnm2207.shinyapps.io/barplot/"> </iframe>
+```
+
+After playing around with the bar chart, we can see that the top 3 highest count of breeds, 'Toy Group', 'Sporting Group' and 'Working Group' has the majority shedding value of 0.6. This may imply that breeds with seasonal shedding are more popular. Next, the energy level. From the bar charts, we can see that the energy levels does not have a clear trend. This may be due to the different breeds and their purpose. Sporting groups are bred to assist hunters in the capture and retrieval of feathered game., thus having the highest energy level to carry out their task. Whereas for 'Working Group', they were bred to assist humans in smaller capacities such as guarding homes or protecting families. 'Toy Group' are usually bred for companionship and often are lap dogs, thus the lower energy level. Similarly, the trainability value also varies greatly with the 'Working Group' and 'Toy Group' being majority agreeable to training as they only carry out basic tasks compared to 'Sporting Group' that need to carry out more complex tasks.
+
+## Violin Chart

@@ -32,59 +32,7 @@ data_wg <- data %>%
 ui <- fluidPage(
   theme = shinythemes::shinytheme("journal"),
   
-  titlePanel("Which is the most popular dog breed group??"),
-  
-  sidebarLayout(
-    sidebarPanel(
-      style = "width: 300px;",
-      textOutput("text"),
-      
-      selectInput(inputId = "breeds",
-                  label="Breed Group:",
-                  choices = c("All", unique(data$group)),
-                  selected = "All",
-                  multiple = TRUE),
-    
-    sliderInput(inputId = "mHeight",
-                label = "Mean Height Range (cm)",
-                min=min(data$mean_height, na.rm = TRUE),
-                max=max(data$mean_height, na.rm = TRUE),
-                value=c(min(data$mean_height, na.rm = TRUE), max(data$mean_height, na.rm = TRUE))),
-    
-    sliderInput(inputId="mWeight",
-                label = "Mean Weight Range (kg)",
-                min = min(data$mean_weight, na.rm = TRUE),
-                max = max(data$mean_weight, na.rm = TRUE),
-                value = c(min(data$mean_weight, na.rm = TRUE), max(data$mean_weight, na.rm = TRUE))),
-    
-    sliderInput(inputId="mExpectancy",
-                label = "Mean Expectancy Range (years)",
-                min = min(data$mean_expectancy, na.rm = TRUE),
-                max = max(data$mean_expectancy, na.rm = TRUE),
-                step = 0.5,
-                value = c(min(data$mean_expectancy, na.rm = TRUE), max(data$mean_expectancy, na.rm = TRUE))),
-
-    sliderInput(inputId="shedV",
-                label="Shedding Value:",
-                min = 0.2,
-                max = 1.0,
-                step = 0.2,
-                value = c(0.2,1.0)),
-    
-    sliderInput(inputId = "energyV",
-                label = "Energy Level:",
-                min = 0.2,
-                max = 1.0,
-                step = 0.2,
-                value = c(0.2,1.0)),
-    
-    sliderInput(inputId = "trainV",
-                label = "Trainability Value:",
-                min = 0.2,
-                max = 1.0,
-                step = 0.2,
-                value = c(0.2,1.0))
-        ),
+  titlePanel("Table of Data Set"),
     
     mainPanel(
       tabsetPanel(type = "tabs",
@@ -113,19 +61,61 @@ ui <- fluidPage(
                            p(strong("Trainability Value:"), "This number represents the trainability. The higher 
                              the value, the easier to train"), em("0.2 = May be Stubborn, 0.4 = Independent, 0.6 = Agreeable, 0.8 = Easy Training, 1.0 = Eager to Please")
                            ),
-                  tabPanel("Table", tableOutput("summary")),
-                  tabPanel("Plot Summary", 
-                           plotOutput("plot"),
-                           plotOutput("plot2"),
-                           plotOutput("plot3")
-                           ),
-                  tabPanel("Plot Working Group",
-                           plotOutput("plot_combine"),
-                           plotOutput("plotwg2"),
-                           plotOutput("plotwg3"))
+                  tabPanel("Table", 
+                           sidebarLayout(
+                             sidebarPanel(
+                               textOutput("text"),
+                               
+                               selectInput(inputId = "breeds",
+                                           label="Breed Group:",
+                                           choices = c("All", unique(data$group)),
+                                           selected = "All",
+                                           multiple = TRUE),
+                               
+                               sliderInput(inputId = "mHeight",
+                                           label = "Mean Height Range (cm)",
+                                           min=min(data$mean_height, na.rm = TRUE),
+                                           max=max(data$mean_height, na.rm = TRUE),
+                                           value=c(min(data$mean_height, na.rm = TRUE), max(data$mean_height, na.rm = TRUE))),
+                               
+                               sliderInput(inputId="mWeight",
+                                           label = "Mean Weight Range (kg)",
+                                           min = min(data$mean_weight, na.rm = TRUE),
+                                           max = max(data$mean_weight, na.rm = TRUE),
+                                           value = c(min(data$mean_weight, na.rm = TRUE), max(data$mean_weight, na.rm = TRUE))),
+                               
+                               sliderInput(inputId="mExpectancy",
+                                           label = "Mean Expectancy Range (years)",
+                                           min = min(data$mean_expectancy, na.rm = TRUE),
+                                           max = max(data$mean_expectancy, na.rm = TRUE),
+                                           step = 0.5,
+                                           value = c(min(data$mean_expectancy, na.rm = TRUE), max(data$mean_expectancy, na.rm = TRUE))),
+                               
+                               sliderInput(inputId="shedV",
+                                           label="Shedding Value:",
+                                           min = 0.2,
+                                           max = 1.0,
+                                           step = 0.2,
+                                           value = c(0.2,1.0)),
+                               
+                               sliderInput(inputId = "energyV",
+                                           label = "Energy Level:",
+                                           min = 0.2,
+                                           max = 1.0,
+                                           step = 0.2,
+                                           value = c(0.2,1.0)),
+                               
+                               sliderInput(inputId = "trainV",
+                                           label = "Trainability Value:",
+                                           min = 0.2,
+                                           max = 1.0,
+                                           step = 0.2,
+                                           value = c(0.2,1.0))
+                             ), 
+                             mainPanel(tableOutput("summary"))
+                           ))
                   ))
   )
-)
 
 
 # Define server logic ----
@@ -154,52 +144,6 @@ server <- function(input, output) {
   
   output$description <- renderText({
   })
-  
-  output$plot <- renderPlot({
-    
-    ggplot(data_plot,aes(x = group, fill = shedding_value)) + 
-      geom_bar() +
-      labs(x = "Breed Group",y = "Count", fill = "Shedding Value") +
-      ggtitle("Count of Groups in Top 100 Breeds by Shedding Value")
-  })
-  
-  output$plot2 <- renderPlot ({
-    
-    ggplot(data_plot,aes(x = group, fill = energy_level_value)) + 
-      geom_bar() +
-      labs(x = "Breed Group",y = "Count", fill = "Energy Level") +
-      ggtitle("Count of Groups in Top 100 Breeds by Energy Level")
-  })
-  
-  output$plot3 <- renderPlot ({
-    
-    ggplot(data_plot,aes(x = group, fill = trainability_value)) + 
-      geom_bar() +
-      labs(x = "Breed Group",y = "Count", fill = "Trainability Value") +
-      ggtitle("Count of Groups in Top 100 Breeds by Trainability Value")
-  })
-  
-  output$plot_combine <- renderPlot({
-    plotwg1 <- 
-      ggplot(data_wg,aes(x=mean_height)) +
-      geom_density(color = "#581845") +
-      labs(x = "Mean Height (cm)", y = "Frequency") +
-      ggtitle("Distribution of Mean Heights")
-    
-    plotwg2 <-
-      ggplot(data_wg, aes(x=mean_weight)) +
-      geom_density(color="#900C3F") +
-      labs(x = "Mean Weight (kg)", y = "Frequency") +
-      ggtitle("Distribution of Mean Weight")
-    
-    plotwg3 <- ggplot(data_wg, aes(mean_expectancy)) +
-      geom_density(color="#C70039") +
-      labs(x="Mean Expectancy (years)", y="Frequency") +
-      ggtitle("Distribution of Mean Expectancy")
-    
-    grid.arrange(plotwg1,plotwg2,plotwg3, ncol=2)
-  })
-  
 
   }
     

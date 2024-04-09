@@ -14,9 +14,6 @@ The links to the data set can be found below:
 
 akc data latest - <https://www.kaggle.com/datasets/mexwell/dog-breeds-dataset>
 
-# Data Story
-The data story that I will be telling is about the top 100 most popular dog breeds and their respective characteristics as to why they are the most popular.
-
 # Data Selection 
 
 I will be using the columns breeds, popularity, group, min_height, max_height, min_weight, max_weight, min_expectancy, max_expectancy, shedding_value, energy_level_value, trainability_value.
@@ -34,7 +31,8 @@ It is a bar chart visualization to see the relationship between the most popular
 From the "Plot Summary" it can be seen that the 'Working Group' is the most popular breed group in the top 100 thus this density plot visualization will show the different characteristic distribution of the working group dogs.
 
 # Shiny Application
+Shiny App link: <https://sherilyntangnm2207.shinyapps.io/MyShinyApp/>
 
 ```{=html}
-https://sherilyntangnm2207.shinyapps.io/MyShinyApp/<iframe height="400" width="150%" frameborder="no" src="https://sherilyntangnm2207.shinyapps.io/MyShinyApp/" </iframe>
+<iframe height="400" width="150%" frameborder="no" src="https://sherilyntangnm2207.shinyapps.io/MyShinyApp/" </iframe>
 ```

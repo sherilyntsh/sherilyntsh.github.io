@@ -1,0 +1,14 @@
+---
+title: "Data Story"
+---
+The data story that I will be telling is about the top 100 most popular dog breeds and their respective characteristics as to why they are the most popular.
+
+# Data Table
+
+First, let us look at the selected data set and it's respective rows and columns. Read the description of the different variables before clicking the 'Table'. This table is interactive and you can choose to see the different dog breed groups and also change the ranges of the different variables at the side bar. Time for you to explore!
+
+```{=html}
+<iframe height="800" width="120%" frameborder="no" src="https://sherilyntangnm2207.shinyapps.io/MyShinyApp/" </iframe>
+```
+
+Looking at this table, it is hard to see any trends or patterns. So let's move onto data visualization to analyse our data set! Click on 'Data Visualization' to look at the different plots.
