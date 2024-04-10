@@ -14,8 +14,6 @@ website:
         text: Data Story
       - href: datavisual.qmd
         text: Data Visualization
-        
-      
 
 format:
   html:
