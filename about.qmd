@@ -30,9 +30,3 @@ It is a bar chart visualization to see the relationship between the most popular
 3. "Plot Working Group"
 From the "Plot Summary" it can be seen that the 'Working Group' is the most popular breed group in the top 100 thus this density plot visualization will show the different characteristic distribution of the working group dogs.
 
-# Shiny Application
-Shiny App link: <https://sherilyntangnm2207.shinyapps.io/MyShinyApp/>
-
-```{=html}
-<iframe height="400" width="150%" frameborder="no" src="https://sherilyntangnm2207.shinyapps.io/MyShinyApp/" </iframe>
-```
