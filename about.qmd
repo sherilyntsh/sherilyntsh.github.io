@@ -4,21 +4,21 @@ title: "About"
 
 Welcome to my website!
 
-# Introduction
+## Introduction
 
 Welcome to Sherilyn's GitHub! Here is where all the progress of my work from NM2207 will be kept and also my final project. The data story that I have decided to work on is about dogs. I am going to create an app using shiny to help users to visualize which dog breed group is the most popular and why is that so.
 
-# Data Set
+## Data Set
 
 The links to the data set can be found below:
 
 akc data latest - <https://www.kaggle.com/datasets/mexwell/dog-breeds-dataset>
 
-# Data Selection 
+## Data Selection 
 
 I will be using the columns breeds, popularity, group, min_height, max_height, min_weight, max_weight, min_expectancy, max_expectancy, shedding_value, energy_level_value, trainability_value.
 
-# Data Visualization
+## Data Visualization
 There will be 3 kinds of visualization. 
 
 1. "Table"
@@ -30,5 +30,5 @@ It is a bar chart visualization to see the relationship between the most popular
 3. "Plot Working Group"
 From the "Plot Summary" it can be seen that the 'Working Group' is the most popular breed group in the top 100 thus this density plot visualization will show the different characteristic distribution of the working group dogs.
 
-# Conclusion
+## Conclusion
 This page answers the data story question. Click on the 'Conclusion' tab to read what we have concluded from our data set and data visualization!

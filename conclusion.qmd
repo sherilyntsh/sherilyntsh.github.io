@@ -2,11 +2,11 @@
 title: "Conclusion"
 ---
 
-# Data Question
+## Data Question
 
 What is the most popular dog breed group and what are their characteristics that make them popular?
 
-# Conclusion
+## Conclusion
 
 ```{r, out.height= "600px",out.width= "800px",echo=FALSE,eval=TRUE,fig.cap="Working Group Dogs"}
 knitr::include_graphics("image.png") 

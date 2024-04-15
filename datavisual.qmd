@@ -9,14 +9,13 @@ In this bar chart visualization, we can see the count of the group breeds in the
 ```{=html}
 <iframe height="620" width="100%" frameborder="no" src="https://sherilyntangnm2207.shinyapps.io/barplot/"> </iframe>
 ```
-
 After playing around with the bar chart, we can see that the top 3 highest count of breeds, 'Toy Group', 'Sporting Group' and 'Working Group' has the majority shedding value of 0.6. This may imply that breeds with seasonal shedding are more popular. Next, the energy level. From the bar charts, we can see that the energy levels does not have a clear trend. This may be due to the different breeds and their purpose. Sporting groups are bred to assist hunters in the capture and retrieval of feathered game., thus having the highest energy level to carry out their task. Whereas for 'Working Group', they were bred to assist humans in smaller capacities such as guarding homes or protecting families. 'Toy Group' are usually bred for companionship and often are lap dogs, thus the lower energy level. Similarly, the trainability value also varies greatly with the 'Working Group' and 'Toy Group' being majority agreeable to training as they only carry out basic tasks compared to 'Sporting Group' that need to carry out more complex tasks.
 
 ## Violin Chart
-In this violin plot, we are able to see the spread of the different continuous variable (ie. mean height, mean weight, mean expectancy) across the different breed groups. Use the side bar to select different variables to see the different spreads of the variables. 
+
+In this violin plot, we are able to see the spread of the different continuous variable (ie. mean height, mean weight, mean expectancy) across the different breed groups. Use the side bar to select different variables to see the different spreads of the variables.
 
 ```{=html}
 <iframe height="600" width="100%" frameborder="no" src="https://sherilyntangnm2207.shinyapps.io/violinplot/"> </iframe>
 ```
-
-After playing around with the violin plot, we can see that the spreads for each variable is different across all breed groups. For 'mean_height', we can see that the 'Hound Group' breed has the widest height range, ranging from about 15cm to 79cm whereas 'Toy Group' has the smallest height range from about 17cm to 35cm. For 'mean_weight', we can see that the 'Working Group' breed has the widest weight range, ranging from 0kg to 80kg whereas 'Toy Group' has the smallest weight range from about 2kg to 8kg. For 'mean_expectancy', we can see that 'Working Group' has the widest expectancy range from about 6 years to 14 years whereas 'Toy Group' has the smallest expectancy range from about 13 years to 16 years. 
+After playing around with the violin plot, we can see that the spreads for each variable is different across all breed groups. For 'mean_height', we can see that the 'Hound Group' breed has the widest height range, ranging from about 15cm to 79cm whereas 'Toy Group' has the smallest height range from about 17cm to 35cm. For 'mean_weight', we can see that the 'Working Group' breed has the widest weight range, ranging from 0kg to 80kg whereas 'Toy Group' has the smallest weight range from about 2kg to 8kg. For 'mean_expectancy', we can see that 'Working Group' has the widest expectancy range from about 6 years to 14 years whereas 'Toy Group' has the smallest expectancy range from about 13 years to 16 years.
