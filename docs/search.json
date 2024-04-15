@@ -4,7 +4,7 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "Welcome to my website!\n\nIntroduction\nWelcome to Sherilyn’s GitHub! Here is where all the progress of my work from NM2207 will be kept and also my final project. The data story that I have decided to work on is about dogs. I am going to create an app using shiny to help users to visualize which dog breed group is the most popular and why is that so.\n\n\nData Set\nThe links to the data set can be found below:\nakc data latest - https://www.kaggle.com/datasets/mexwell/dog-breeds-dataset\n\n\nData Selection\nI will be using the columns breeds, popularity, group, min_height, max_height, min_weight, max_weight, min_expectancy, max_expectancy, shedding_value, energy_level_value, trainability_value.\n\n\nData Visualization\nThere will be 3 kinds of visualization.\n\n“Table” It is a table that shows users the whole data set of the top 100 dog breeds and also filter through the data set.\n“Plot Summary” It is a bar chart visualization to see the relationship between the most popular dog groups and their respective characteristics.\n“Plot Working Group” From the “Plot Summary” it can be seen that the ‘Working Group’ is the most popular breed group in the top 100 thus this density plot visualization will show the different characteristic distribution of the working group dogs.\n\n\n\nConclusion\nThis page answers the data story question. Click on the ‘Conclusion’ tab to read what we have concluded from our data set and data visualization!"
+    "text": "Welcome to my website!"
   },
   {
     "objectID": "index.html",
@@ -89,5 +89,40 @@
     "title": "Conclusion",
     "section": "Conclusion",
     "text": "Conclusion\n\n\n\n\n\nWorking Group Dogs\n\n\n\n\nFrom the ‘Data Visualization’ tab, we can see that the ‘Working Group’ has the highest count in the top 100 dog breeds. From the ‘Table’ tab, we can filter the ‘Working Group’ to see what different breeds there are. Some of the breeds under the ‘Working Group’ are Rottweiler, Boxer, Siberian Husky and Great Dane. Then, to determine the characteristics of the ‘Working Group’, we will use the bar chart from the ‘Data Visualization’. From the side bar, we can change the variables to determine the characteristic. From there, the characteristics are as such; 0.6 seasonal shedding value, 0.8 energetic energy level and 0.6 agreeable training value. Next, from the violin plot, we can see the spread of continuous variables. The violin plot shows that most of the dogs in the ‘Working Group’ has a mean height of 64cm as seen from the central tendency of the plot, while the mean weight has an even spread ranging from 0kg to 80kg. Lastly, we can see that the mean expectancy from the violin plot has its central tendency towards 9 years.\nHowever, having 0kg within the mean weight range seems impossible and it may be due to an error in the data set. Going back to the ‘Table’ and filtering out the ‘Working Group’ breeds, we can see that the breed ‘Cane Corso’ has a mean weight of 0kg. This error in the data may be due to the main data set not having the value as the current data set is extrapolated from the main data set. In order to avoid such errors next time, we can code it such that on top of disregarding the N.A. values, we can set a numerical filter that values must be above 0."
+  },
+  {
+    "objectID": "about.html#introduction",
+    "href": "about.html#introduction",
+    "title": "About",
+    "section": "Introduction",
+    "text": "Introduction\nWelcome to Sherilyn’s GitHub! Here is where all the progress of my work from NM2207 will be kept and also my final project. The data story that I have decided to work on is about dogs. I am going to create an app using shiny to help users to visualize which dog breed group is the most popular and why is that so."
+  },
+  {
+    "objectID": "about.html#data-set",
+    "href": "about.html#data-set",
+    "title": "About",
+    "section": "Data Set",
+    "text": "Data Set\nThe links to the data set can be found below:\nakc data latest - https://www.kaggle.com/datasets/mexwell/dog-breeds-dataset"
+  },
+  {
+    "objectID": "about.html#data-selection",
+    "href": "about.html#data-selection",
+    "title": "About",
+    "section": "Data Selection",
+    "text": "Data Selection\nI will be using the columns breeds, popularity, group, min_height, max_height, min_weight, max_weight, min_expectancy, max_expectancy, shedding_value, energy_level_value, trainability_value."
+  },
+  {
+    "objectID": "about.html#data-visualization",
+    "href": "about.html#data-visualization",
+    "title": "About",
+    "section": "Data Visualization",
+    "text": "Data Visualization\nThere will be 3 kinds of visualization.\n\n“Table” It is a table that shows users the whole data set of the top 100 dog breeds and also filter through the data set.\n“Bar Chart” It is a bar chart visualization to see the count of the the type of breeds there are in the top 100 most popular breeds and their respective characteristics.\n“Violin Plot” This violin plot visualization will show the distributions of the continuous variable characteristics of the all the different breed group. From the “Bar Chart” it can also be seen that the ‘Working Group’ is the most popular breed group in the top 100 thus from this violin plot we can see what characteristics is most common for this breed group."
+  },
+  {
+    "objectID": "about.html#conclusion",
+    "href": "about.html#conclusion",
+    "title": "About",
+    "section": "Conclusion",
+    "text": "Conclusion\nThis page answers the data story question. Click on the ‘Conclusion’ tab to read what we have concluded from our data set and data visualization!"
   }
 ]
